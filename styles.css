@@ -1,0 +1,21 @@
+label {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+}
+
+#radio1,
+#radio2,
+input[type="radio"] {
+  width: unset;
+  text-align: unset;
+}
