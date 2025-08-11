@@ -1,12 +1,13 @@
-label {
-  width: 100%;
-  display: block;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background.jpg");
+  color: white;
 }
 
-h1,
-p {
+label {
+  display: block;
   text-align: center;
+  margin-top: 0.2%;
 }
 
 input {
@@ -18,4 +19,15 @@ input {
 input[type="radio"] {
   width: unset;
   text-align: unset;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  border: solid;
+  border-color: brown;
+  margin: auto 20%;
 }
