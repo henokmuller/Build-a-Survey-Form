@@ -14,7 +14,7 @@
       </p>
     </header>
     <main>
-      <div>
+      <div class="backdiv">
         <form id="survey-form">
           <label for="name" id="name-label"
             >Name
@@ -28,7 +28,7 @@
           <label for="email" id="email-label"
             >email
             <input
-              type="text"
+              type="email"
               name=""
               id="email"
               placeholder="Enter your email"
@@ -46,23 +46,74 @@
               required
           /></label>
           <label id="radio1" for=""
-            >tea <input type="radio" name="radios" id="radio-input1"
+            >tea <input type="radio" name="radios" id="radio-input1" value="tea" checked
           /></label>
           <label id="radio2" for=""
-            >Coffee <input type="radio" name="radios" id="radio-input2"
+            >Coffee <input type="radio" name="radios" id="radio-input2" value="coffee" 
           /></label>
-          <label for="select"
-            >What’s most important to you in a coffee shop?</label
+
+          <label for="select" id="dropdown-label"
+            >What's most important to you in a coffee shop?</label
           >
-          <select name="" id="">
+          <select name="" id="dropdown">
             <option value="">-- Please choose an option --</option>
-            <option value="taste">Taste & quality of coffee</option>
+            <option value="taste" selected>Taste & quality of coffee</option>
             <option value="menu-variety">Variety of menu items</option>
             <option value="ambience">Ambience & comfort</option>
             <option value="price">Affordable prices</option>
           </select>
+          <fieldset>
+            <legend>
+              What do you take with your coffee? (Please check all that
+              apply):
+            </legend>
+            <label class="checkbox" for="">Milk
+              <input
+                type="checkbox"
+                name="checkbox1"
+                id="checkbox1"
+                value="milk" ></label>
+                <label class="checkbox" for="">Sugar
+                  <input
+                  type="checkbox"
+                  name="checkbox1"
+                  id="checkbox1"
+                  value="sugar">
+                </label>
+                <label class="checkbox" for="">Cream
+                  <input
+                type="checkbox"
+                name="checkbox1"
+                id="checkbox1"
+                value="cream">
+                </label>
+               <label class="checkbox" for="">Syrup
+                <input
+                type="checkbox"
+                name="checkbox1"
+                id="checkbox1"
+                value="Syrup (Vanilla, Caramel, Hazelnut)">
+               </label>
+                <label class="checkbox" for="">Nothing
+                  <input
+                type="checkbox"
+                name="checkbox1"
+                id="checkbox1"
+                value=" Nothing — I’m a coffee purist">
+                </label>
+            
+          </fieldset>
+          <label for="comments" id="comments-label"
+            >Any additional comments?
+            <textarea
+              name=""
+              id="comments"
+              cols="30"
+              rows="10"
+              placeholder="Enter your comments here"
+            ></textarea>
         </form>
-        <button type="submit" form="survey-form">Submit</button>
+        <button type="submit" form="survey-form" id="submit">Submit</button>
       </div>
     </main>
     <footer>
